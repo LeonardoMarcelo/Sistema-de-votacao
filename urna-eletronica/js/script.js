@@ -170,7 +170,11 @@ function branco() {
     rMensagem.style.display = 'block'
     rMensagem.innerHTML = 'VOTO EM BRANCO';
 
-    (new Audio('audio/se1.mp3')).play()
+    (new Audio('audio/se3.mp3')).play()
+       setTimeout(function(){
+
+      location.reload()
+    }, 1000)
   }
 
 }
@@ -234,10 +238,12 @@ function confirmar() {
   } else {
     document.querySelector('.tela').innerHTML = `
       <div class="fim">FIM</div>
-      <a href="resultado.php">
-        <button>Ver Resultados</button>
-      </a>
+ 
     `
+       setTimeout(function(){
+
+      location.reload()
+    }, 1000)
   }
 
   (new Audio('audio/se3.mp3')).play()
