@@ -62,6 +62,7 @@ img{
 .imagem{
   height: 130px !important;
   margin: 0 auto;
+  background-color:white;
   width: 100%;
 }
 .teclado {
